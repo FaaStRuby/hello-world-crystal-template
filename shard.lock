@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  faastruby-spec-helper:
+    github: faastruby/faastruby-spec-helper.cr
+    version: 0.1.0
+

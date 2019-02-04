@@ -1,0 +1,11 @@
+---
+name: hello-world-crystal-template
+version: 0.1.0
+crystal: 0.27.0
+targets:
+  hello-world-crystal-template:
+    main: src/handler.cr
+development_dependencies:
+  faastruby-spec-helper:
+    github: faastruby/faastruby-spec-helper.cr
+    version: "~> 0.1.0"
