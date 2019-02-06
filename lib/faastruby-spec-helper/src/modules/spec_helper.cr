@@ -14,8 +14,7 @@ module FaaStRuby::SpecHelper
     property "headers"
     property "io"
     property "binary"
-    def initialize(@body : String?, @status : Int32, @headers : Hash(String, String), @binary : Bool = false)
-      @io = nil
+    def initialize(@body : String?, @status : Int32, @headers : Hash(String, String), @binary : Bool = false, @io : Bytes? = nil)
     end
 
     def initialize(@io : Bytes, @status : Int32, @headers : Hash(String, String), @binary : Bool = true)
