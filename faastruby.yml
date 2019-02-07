@@ -1,7 +1,7 @@
 ---
 cli_version: 0.4.16
 name: hello-world-crystal-template
-runtime: crystal:0.27.0
+runtime: crystal:0.27.2
 test_command: crystal spec --no-color
 abort_build_when_tests_fail: true
 abort_deploy_when_tests_fail: true
