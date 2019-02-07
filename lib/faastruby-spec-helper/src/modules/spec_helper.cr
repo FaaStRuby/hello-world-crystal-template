@@ -20,23 +20,22 @@ module FaaStRuby::SpecHelper
     def initialize(@io : Bytes, @status : Int32, @headers : Hash(String, String), @binary : Bool = true)
     end
 
-    def payload
+    def payload : Hash(String, String)
       if io
-        hash = {
+        return {
           "response" => Base64.encode(io.not_nil!),
           "status" => status,
           "headers" => headers,
           "binary" => binary
         }
       else
-        hash = {
+        return {
           "response" => body,
           "status" => status,
           "headers" => headers,
           "binary" => binary
         }
       end
-      hash
     end
   end
 
